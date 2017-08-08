@@ -1,0 +1,45 @@
+{
+    "name": "wesrice/api-toolkit",
+    "description": "Craft RESTful APIs using Open API Initiative spec files.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "rest",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wes Rice",
+            "homepage": "https://wesrice.com"
+        }
+    ],
+    "require": {
+        "krtv/yii2-jms-serializer": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "wesrice\\apitoolkit\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "apitoolkit",
+        "name": "API Toolkit",
+        "developer": "Wes Rice",
+        "developerUrl": "https://wesrice.com",
+        "components": {
+            "serializer": {
+                "class": "krtv\\yii2\\serializer\\Serializer",
+                "formats": [
+                    "json",
+                    "xml",
+                    "yaml"
+                ]
+            }
+        }
+    }
+}
