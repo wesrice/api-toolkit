@@ -1,0 +1,21 @@
+get:
+  tags:
+    - entries
+  summary: Get Entries
+  description: Get an paginated array of entries.
+  operationId: getEntries
+  consumes:
+    - application/xml
+    - application/json
+    - multipart/form-data
+    - application/x-www-form-urlencoded
+  produces:
+    - application/xml
+    - application/json
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: "#/definitions/Entry"

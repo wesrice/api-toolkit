@@ -1,0 +1,36 @@
+{
+    "name": "wesrice/api-toolkit",
+    "description": "Craft RESTful APIs using Open API Initiative spec files.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "rest",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wes Rice",
+            "homepage": "https://wesrice.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "wesrice\\apitoolkit\\": "src/"
+        }
+    },
+    "require": {
+        "thefrozenfire/swagger": "^2.0"
+    },
+    "extra": {
+        "handle": "apitoolkit",
+        "name": "API Toolkit",
+        "developer": "Wes Rice",
+        "developerUrl": "https://wesrice.com",
+        "class": "wesrice\\apitoolkit\\ApiToolkit"
+    }
+}

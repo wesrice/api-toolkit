@@ -1,0 +1,8 @@
+/elements:
+  $ref: paths/elements.yaml
+  x-craftcms:
+    apitoolkit:
+      controller: \wesrice\apitoolkit\api\elements
+/entries:
+  $ref: paths/entries.yaml
+

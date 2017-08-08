@@ -1,0 +1,63 @@
+properties:
+  id:
+    type: integer
+    format: int64
+  uid:
+    type: string
+    format: uuid
+  fieldLayoutId:
+    type: integer
+    format: int64
+  structureId:
+    type: integer
+    format: int64
+  contentId:
+    type: integer
+    format: int64
+  enabled:
+    type: boolean
+    default: true
+  archived:
+    type: boolean
+    default: false
+  siteId:
+    type: integer
+    format: int64
+  enabledForSite:
+    type: boolean
+    default: true
+  title:
+    type: string
+  slug:
+    type: string
+  uri:
+    type: string
+  dateCreated:
+    type: string
+    format: date-time
+  dateUpdated:
+    type: string
+    format: date-time
+  root:
+    type: integer
+    format: int64
+  lft:
+    type: integer
+    format: int64
+  rgt:
+    type: integer
+    format: int64
+  level:
+    type: integer
+    format: int64
+  searchScore:
+    type: integer
+    format: int64
+  awaitingFieldValues:
+    type: boolean
+    default: false
+  propagating: 
+    type: boolean
+    default: false
+xml:
+  name: Element

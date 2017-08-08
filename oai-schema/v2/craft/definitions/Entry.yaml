@@ -1,0 +1,5 @@
+allOf: 
+  - $ref: "#/definitions/Element"
+  - type: object
+    xml:
+      name: Entry

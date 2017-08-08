@@ -1,0 +1,19 @@
+swagger: "2.0"
+
+info:
+  $ref: info.yaml
+
+tags:
+  $ref: tags.yaml
+
+definitions:
+  $ref: definitions.yaml
+
+schemes:
+  - http
+  - https
+
+basePath: /api
+
+paths:
+  $ref: paths.yaml

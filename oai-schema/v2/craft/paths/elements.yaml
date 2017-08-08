@@ -1,0 +1,40 @@
+get:
+  tags:
+    - elements
+  summary: Get Elements
+  description: Get an paginated array of elements.
+  operationId: getEntries
+  consumes:
+    - application/xml
+    - application/json
+    - multipart/form-data
+    - application/x-www-form-urlencoded
+  produces:
+    - application/xml
+    - application/json
+  responses:
+    200:
+      description: Success
+      schema:
+        type: array
+        items:
+          $ref: "#/definitions/Element"
+  x-craftcms:
+    apitoolkit:
+      action: index
+      filters:
+        corsFilter:
+          class: \yii\filters\Cors
+          cors:
+              Origin:
+                - http://www.myserver.com
+                - https://www.myserver.com
+              Access-Control-Request-Method:
+                - POST
+                - PUT
+              Access-Control-Request-Headers:
+                - X-Wsse
+              Access-Control-Allow-Credentials: true
+              Access-Control-Max-Age: 3600
+              Access-Control-Expose-Headers:
+                - X-Pagination-Current-Page

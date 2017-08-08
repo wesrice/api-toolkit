@@ -1,0 +1,4 @@
+Element:
+  $ref: definitions/Element.yaml
+Entry:
+  $ref: definitions/Entry.yaml
